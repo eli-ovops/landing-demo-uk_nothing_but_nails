@@ -1,0 +1,24 @@
+Nothing But Nails — Demo Display Package
+Package class: DEMO_DISPLAY_PACKAGE
+Created: 2026-09-01
+
+Purpose
+This archive is the current static display snapshot for local review or a separately authorised unlisted preview. It is not a SOURCE_TRANSFER_PACKAGE and does not authorise hosting, sending, source handover or booking-account action.
+
+Archive root
+index.html
+styles.css
+assets/concept/hero-editorial-nail-concept-v2.png
+assets/concept/pedicure-service-concept-v1.png
+assets/customer/image_003.jpg
+assets/customer/image_004.jpg
+
+Included file SHA-256 before archive
+index.html               f17442d7d9cedd45f4bf52537c0f42a63bd68cd5b4db2b13d4b4b66bd785c9f4
+styles.css               67cc5febf9dd7184be61ad46bbbaf12abd4c59fe946a2d60e80a3686caec47f3
+hero concept image       2301b4651f36c50e55f673b1f68929ef55f4d41ba05a6d71adfddea92f75e471
+pedicure concept image   9a8e07809a9bb2212c72bf5ce04d3dde9197b4b9f12dc47cddd6a616027d6a47
+customer image 003       11408c94a847ab1db18c371d2dcb0dcf233c4e1704135136182041befe006685
+customer image 004       fa6d70411462a88d6222e5812f6e717716ee6a3852ab9cbe41e1387065666cde
+
+The static page keeps its current external Fresha links. No credentials, internal documentation, QA screenshots, hidden metadata files or source-transfer materials are included.

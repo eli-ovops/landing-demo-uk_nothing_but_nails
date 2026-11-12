@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Nothing But Nails — Hero Direction Prototype</title>
+    <link rel="stylesheet" href="prototype.css" />
+  </head>
+  <body data-direction="cover">
+    <p class="prototype-note">Internal Hero Direction Prototype · not part of the client Demo</p>
+
+    <main>
+      <section class="direction direction-cover" aria-labelledby="cover-title">
+        <header class="cover-nav">
+          <span>Arundel</span>
+          <a href="#services">View menu ↓</a>
+        </header>
+        <div class="cover-copy">
+          <p>Nail appointments in Arundel</p>
+          <h1 id="cover-title">Nothing<br />but <em>Nails.</em></h1>
+          <div class="cover-bottom">
+            <p>Manicures, pedicures, nail art and extensions.</p>
+            <p class="trust">5.0 on Fresha · 400 client reviews · Fresha verified</p>
+            <a class="book" href="https://www.fresha.com/a/nothing-but-nails-arundel-unit-5-the-old-print-work-arcade-f594lcj8">Book on Fresha ↗</a>
+          </div>
+        </div>
+        <figure class="cover-image">
+          <img src="../demo_20260901_v2/assets/concept/hero-editorial-nail-concept-v2.png" alt="Rose nude gel manicure with coral micro French tips and gold foil details" />
+        </figure>
+      </section>
+
+      <section class="direction direction-poster" aria-labelledby="poster-title">
+        <figure class="poster-image">
+          <img src="../demo_20260901_v2/assets/concept/hero-editorial-nail-concept-v2.png" alt="Rose nude gel manicure with coral micro French tips and gold foil details" />
+        </figure>
+        <div class="poster-ticket">
+          <p>Arundel · Nail appointments</p>
+          <h1 id="poster-title">Nothing<br />but <em>Nails.</em></h1>
+          <p>Manicures, pedicures, nail art and extensions.</p>
+          <p class="trust">5.0 on Fresha · 400 client reviews · Fresha verified</p>
+          <a class="book" href="https://www.fresha.com/a/nothing-but-nails-arundel-unit-5-the-old-print-work-arcade-f594lcj8">Book on Fresha ↗</a>
+        </div>
+        <a class="poster-menu" href="#services">View menu ↓</a>
+      </section>
+
+      <section class="direction direction-ledger" aria-labelledby="ledger-title">
+        <header class="ledger-top"><span>Arundel, West Sussex</span><a href="#services">View menu ↓</a></header>
+        <div class="ledger-name"><span>NBN</span><h1 id="ledger-title">Nothing<br />but <em>Nails.</em></h1></div>
+        <figure class="ledger-image">
+          <img src="../demo_20260901_v2/assets/concept/hero-editorial-nail-concept-v2.png" alt="Rose nude gel manicure with coral micro French tips and gold foil details" />
+        </figure>
+        <aside class="ledger-booking">
+          <p>Nail appointments in Arundel</p>
+          <p>Manicures, pedicures, nail art and extensions.</p>
+          <p class="trust">5.0 on Fresha<br />400 client reviews<br />Fresha verified</p>
+          <a class="book" href="https://www.fresha.com/a/nothing-but-nails-arundel-unit-5-the-old-print-work-arcade-f594lcj8">Book on Fresha ↗</a>
+        </aside>
+      </section>
+    </main>
+
+    <nav class="prototype-switcher" aria-label="Prototype direction selector">
+      <span>Hero direction</span>
+      <a data-choice="cover" href="?direction=cover">01 Cover</a>
+      <a data-choice="poster" href="?direction=poster">02 Poster</a>
+      <a data-choice="ledger" href="?direction=ledger">03 Ledger</a>
+    </nav>
+
+    <script>
+      const requested = new URLSearchParams(window.location.search).get('direction');
+      const direction = ['cover', 'poster', 'ledger'].includes(requested) ? requested : 'cover';
+      document.body.dataset.direction = direction;
+      document.querySelector(`[data-choice="${direction}"]`).setAttribute('aria-current', 'page');
+    </script>
+  </body>
+</html>

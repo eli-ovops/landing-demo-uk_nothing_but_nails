@@ -1,0 +1,12 @@
+Nothing But Nails — Cloudflare Upload Package
+Package class: CLOUDFLARE_UPLOAD_PACKAGE
+Created: 2026-09-01
+
+Upload structure
+The ZIP root contains index.html, styles.css and assets/. Upload the contents exactly as packaged. Do not place the ZIP inside an extra parent directory.
+
+Content lock
+This is a byte-for-byte media copy of the current local display snapshot, with only relative customer-image paths normalised into assets/customer/ for static-host root resolution. It contains no credentials, deployment configuration, QA screenshots, internal documents or source-transfer materials.
+
+Boundary
+This package prepares static upload only. It does not authorise actual deployment, public release, outreach, account access, booking-system actions or source handover.
